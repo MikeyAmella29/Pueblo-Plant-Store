@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pueblo</title>
+	<link href="styles.css" rel="stylesheet">
+	<script src="obfuscated.js" defer></script>
+		<link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+<body id="body" class="light">
+	<header>
+		<h1 class="light">Pueblo Plant Store</h1>
+		<button id= "color-button"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-sun" viewBox="0 0 16 16"> <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/> </svg></button>
+		<nav id = "navigation" class="light">
+			<ul>
+				<li><a class="light" href="#">Home</a></li>
+				<li><a class="light" href="#">Our Menu</a></li>
+				<li><a class="light" href="#">Order Now</a></li>
+				<li><a class="light" href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+		<!-- image source: Adobe Stock -->
+		<img id="headerImg" src="header.jpeg" alt="Lady standing in front of several plants">
+		<h2>Who we are</h2>
+		<p>At Pueblo, we are dedicated to bringing the beauty of nature into people's lives through our plant store located in Arizona. Our mission is to offer a wide variety of indoor and outdoor plants, along with the necessary products to care for them, so that our customers can create their own oasis of greenery.<br>	At Pueblo, we also offer plant delivery and installation services to make it as easy as possible for our customers to bring nature into their homes or businesses. We strive to provide exceptional customer service and create a welcoming environment for all plant enthusiasts. Overall, we are passionate about providing a wide selection of high-quality plants and products, and helping our customers create their own unique plant oasis.</p>
+	</header>
+
+	<main>
+		<section class="plants">
+			<!-- image sources: Bloom Scape -->
+			<h2>Our Plants</h2>
+			<div class="plant-container">
+				<div id = "plant1" class="plant">
+					<section class="plant-descrip">
+						<h3>Sansevieria</h3>
+						<p>$20.00</p>
+						<p>If you're new to the indoor plant game or are simply looking for an easy-care houseplant, the Sansevieria is the plant for you. This hardy plant is renowned for its adaptability and its classic sword-like leaves. While it does best in bright indirect sunlight, it can truly withstand all light levels from full sun to low light. The Sansevieria is also drought tolerant, making it able to take a little neglect. Keep its sturdy leaves dust-free by wiping them regularly.</p>
+					</section>
+					<img src="SansevieriaZeylanica.jpeg" alt="Plant">
+				</div>
+				<div id = "plant2" class="plant hide">
+					<section class="plant-descrip">
+						<h3>Silver Satin Pothos</h3>
+						<p>$35.00</p>
+						<p>The Silver Satin Pothos leaves are otherworldly with a green base and patches of metallic silver that shimmer when reflecting light. With striking foliage, this plant is part of the Scindapsus genus and not a true pothos, though it looks the part. This vining plant grows densely and is quite easy to care for, making it a great choice for mantles, shelves, and hanging planters.</p>
+					</section>
+					<img src="silver-pothos.jpeg" alt="Plant">
+				</div>
+				<div id = "plant3" class="plant hide">
+					<section class="plant-descrip">
+						<h3>Money Tree</h3>
+						<p>$50.00</p>
+						<p>The Money Tree is the perfect low-care indoor plant to bring a tropical feel with a touch of good fortune. With its intricately braided trunk and bright green, palm-like leaves, it looks both like a tree and a palm. The Money Tree gets its name in part from the natural Feng Shui this plant gives. It's believed this plant will bring positive energy and good luck to the owner. The gorgeous Money Tree makes for a meaningful gift or your own good luck charm.</p>
+					</section>
+					<img src="moneytree.jpeg" alt="Plant">
+				</div>
+			</div>
+		  </section>
+		  <div class="button-container">
+			<button id="plantBtn1" class="light">Sansevieria</button>
+			<button id="plantBtn2" class="light">Silver Satin Pothos</button>
+			<button id="plantBtn3" class="light">Moneytree</button>
+		</div>
+	
+	<div class = "product-game-wrapper">
+		<section class="contact-form">
+			<h2>Contact Us</h2>
+			<div class = "product-wrapper">
+			<form id = "myForm">
+				<label for="fullName">Full Name:</label>
+				<input type="text" id="fullName" name="fullName" >
+				<span class="message">Please enter your full name</span>
+
+				<label for="phone">Phone Number:</label>
+				<input type="tel" id="phone" name="phone">
+				<span class="message">Please enter your phone number</span>
+
+				<label for="email">Email Address:</label>
+				<input type="email" id="email" name="email">
+				<span class="message">Please enter your email</span>
+				
+				
+				<label>Preferred Contact Method:</label>
+				<fieldset>
+					<div>
+						
+						<label>Email</label>
+						<input type="radio" id="emailContact" name="contactMethod" value="email" checked>
+					</div>
+					<div>
+						<label>Phone</label>
+						<input type="radio" id="phoneContact" name="contactMethod" value="phone">
+					</div>
+				</fieldset><span id="prefContact"></span>
+
+
+				<label for="message">Comments</label>
+				<span class="message">You must enter a message</span>
+				<textarea id="message"></textarea>
+				<input type="submit" id="mySubmit">
+			</form>
+			<section id="success" class="hide">
+				<h2>Thank you!</h2>
+				<p>You have successfully submitted the form. Here is the information you sent us:</p>
+				<p id="formSub"></p>
+			</section>
+
+			</div>
+		</section>
+
+		<section id="game">
+			<h2>Win a plant!</h2>
+			<p>Enter a number 1-10. If your number matches ours, you win and get a free plant!</p>
+			<input type="number" id="userNum" name="number">
+			<p id="output">
+			<span id="random1"></span>
+			<span id="random2"></span>
+			<span id="gameMsg"></span>
+			</p>
+			<button id="gamePlay">Play!</button>
+		</section>
+	</div>
+
+	</main>
+	<footer>
+		<p>Pueblo Plants 
+		Copyright © 2021 Wok - All Rights Reserved. 
+		This site is for educational purposes only.</p>
+	</footer>
+
+</body>
+</html>
